@@ -34,11 +34,7 @@ function FileItemC({file}) {
         text-[14px] mt-5 text-center  justify-center
         disabled:bg-gray-300' 
         // onClick={()=>window.open(file?.fileUrl)}  // this is the Orignal One.
-        onClick={() => {
-          if (typeof window !== 'undefined') {
-              window.open(file?.fileUrl);
-          }
-      }}
+        
         disabled={file.password!==password}>
           <Download className='h-4 w-4' /> Download</button>
       <h2 className='text-gray-400 text-[12px]'>*Term and Condition apply</h2>
